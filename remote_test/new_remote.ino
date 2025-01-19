@@ -1,6 +1,6 @@
 /*  
- New code that is adapted from previous remote testing...esp32 can now also act as a remote access point and also this method of controlling via html is faster
-*/
+ New code that is adapted from previous remote testing...esp32 can now also act as a remote access point and and commands
+ sent with html is faster */
 
 #include <WiFi.h>
 #include <WebServer.h>
