@@ -1,8 +1,5 @@
 /*  
-  Rui Santos & Sara Santos - Random Nerd Tutorials
-  https://RandomNerdTutorials.com/esp32-wi-fi-car-robot-arduino/
-  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files.
-  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+ New code that is adapted from previous remote testing...esp32 can now also act as a remote access point and also this method of controlling via html is faster
 */
 
 #include <WiFi.h>
