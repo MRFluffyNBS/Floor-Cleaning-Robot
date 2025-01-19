@@ -7,8 +7,8 @@
 #include "roomba_motors.h"
 
 // Replace with your network credentials
-const char* ssid     = "Su";
-const char* password = "TheSuPiano1205";
+const char* ssid     = "ssid";
+const char* password = "password";
 
 // Create an instance of the WebServer on port 80
 WebServer server(80);
