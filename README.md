@@ -27,9 +27,9 @@ Adafruit Feather Huzzah ESP32
 ## Step 2: Motor and Sensor Libraries 
 
 ## Step 3: Motor driver + Motors
-
+<img src="https://github.com/MRFluffyNBS/Floor-Cleaning-Robot/blob/main/images/initial%20wiring.jpg" alt="Chassis 2" style="width:40%; height:auto;" />
 ## Step 4: Sensors 
-
+<img src="https://github.com/MRFluffyNBS/Floor-Cleaning-Robot/blob/main/images/updated_all_sensors.jpg" alt="Chassis 2" style="width:40%; height:auto;" />
 ## Step 5: Powering the Roomba 
 
 ## Step 6: Vacuum 
