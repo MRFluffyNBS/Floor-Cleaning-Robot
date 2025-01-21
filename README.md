@@ -24,13 +24,21 @@ Adafruit Feather Huzzah ESP32
   <img src="https://github.com/MRFluffyNBS/Floor-Cleaning-Robot/blob/main/images/cad2.jpg" alt="Chassis 2" style="width:40%; height:auto;" />
 </p>
 
-## Step 2: Motor and Sensor Libraries 
 
-## Step 3: Motor driver + Motors
+
+## Step 2: Motor driver + Motors
 <img src="https://github.com/MRFluffyNBS/Floor-Cleaning-Robot/blob/main/images/initial%20wiring.jpg" alt="Chassis 2" style="width:40%; height:auto;" />
-## Step 4: Sensors 
+In order to control the motor driver, you have to use a H bridge that allows for motors to be run both forward and backward. A H bridge consists of basically 4 transistors. The transistors or switches alternate between npn and pnp resistors, so when a HIGH signal is applied to one side, it turns a switch on and the other switch off. This prevents short circuits and means you only need two inputs to control a h bridge. The motor driver I used had two H bridges so it could control two motors. For each pair of inputs, I connected two GPIO pins on the ESP32. These inputs corresponded to the two wires leading to the motors. To turn the motors on in either direction you just need to set one input pin to HIGH and the other one to LOW. In order to control speed, I made sure all GPIO pins supported PWM. Just use PWM on the input that is normally set HIGH to control the motor speed. 
+
+## Step 3: Sensors 
 <img src="https://github.com/MRFluffyNBS/Floor-Cleaning-Robot/blob/main/images/updated_all_sensors.jpg" alt="Chassis 2" style="width:40%; height:auto;" />
+For sensors, I used two ultrasonic sensors on the front end of the roomba. If a sensor detects an object in front of it, the roomba turns a random angle the other direction. The same logic is applied to the IR sensors but instead, they are there to make sure there is always a solid floor beneath. The ultrasonic sensor works by sending out a pulse that bounces off an object and is then read by the sensor. The code for this is fairly simple and can be easily found online. Just make sure to account for a 0 in the reading because sometimes the sensor times out and doesn't output a valid reading. This could erroneously trigger that an object is detected in front. 
+
+## Step 2: Motor and Sensor Libraries 
+To make writing code easier and allow for better integration of the software when writing a pathfinding algorithm/future setting up for remote use, I made separate classes for turning the motors and object detection for both the ultrasonic sensors and IR proximity sensors. Using these classes, I could create simple functions such as forward/reverse to move the Roomba and also one single command to check if there is an object in front of the sensors. I wrote these classes a separate file in the format of Arduino libraries. They are split into two files each with a .h file for method/class prototypes and a .cpp file for the actual implementation. This [video](https://www.youtube.com/watch?v=IiZl3p-ZohM) goes into it in more detail. 
+
 ## Step 5: Powering the Roomba 
+
 
 ## Step 6: Vacuum 
 
