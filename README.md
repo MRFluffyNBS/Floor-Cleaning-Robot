@@ -9,7 +9,7 @@ As you can see in the following picture of the roomba (I'll be calling it that f
 
 ***Click the image above to play video***
 
-Even though the construction may not be the sturdiest, the "roomba" runs well most of the time and is pretty good at obstacle avoidance given that there isn't a carpet or high beam for the robot to get caught on. Once I can use a 3d printer more often, the next goal would be to construct a sleeker and shorter chassis much like a real roomba so that the robot can move around easier. However, the base plate and wheels of the robot are 3d printed, however, there are also parts of the design that I would like to improve on seeing that I could only get stuff 3d printed once at my library. I have also included the CAD files in the repo. 
+Even though the construction may not be the sturdiest, the "roomba" runs well most of the time and is pretty good at obstacle avoidance given that there isn't a carpet or high beam for the robot to get caught on. Once I can use a 3d printer more often, the next goal would be to construct a sleeker and shorter chassis much like a real roomba so that the robot can move around easier. However, the base plate and wheels of the robot are 3d printed, however, there are also parts of the design that I would like to improve on seeing that I could only get stuff 3d printed once at my library. I have also included the CAD files in the repo. Hopefully in the future I can actually get access to a 3D printer :C
 
 ## Overview
 
